@@ -8,7 +8,7 @@ axios.get(url).then(response => {
     const mulheres = pessoa => pessoa.genero == 'F'
     const china = pessoa => pessoa.pais == 'China'
     const menorSalario = (func, funcAtual) => {
-        return func.salario < funcAtual ? func : funcAtual
+        return func.salario < funcAtual.salario ? func : funcAtual
     }
 
     const mulherMenorSalario = funcionarios.filter(mulheres).filter(china).reduce(menorSalario)
