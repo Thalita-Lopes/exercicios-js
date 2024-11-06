@@ -4,8 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Desafio Card</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <style>
-        /* ... */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Oswald', sans-serif;
+        }
+        
+        .curso {
+            position: relative;
+            background-color: #fff;
+            height: 300px;
+            width: 220px;
+            box-sizing: content-box;
+            padding: 1em;
+            margin: 1em;
+            box-shadow: 4px 4px 4px 4px #8483837a;
+            display: inline-block;
+        }
+
+        img {
+            height: 120px;
+        }
+
+        .preco-de {
+            color: #d10e0e;
+            font-size: 0.6em;
+            text-decoration: line-through;
+        }
+
+        .preco-por {
+            color:green;
+            font-weight: bold;
+        }
+
+        .curso-preco {
+            right: 1em;
+        }
     </style>
 </head>
 
@@ -16,7 +55,7 @@
     <img src="http://files.cod3r.com.br/curso-web/card.png" height="340" alt="Objetivo">
 
     <h2>Resultado</h2>
-    <div>
+    <div class="container">
         <div class="curso">
             <img src="http://files.cod3r.com.br/curso-web/curso1.jpg" />
             <div class="curso-info">
