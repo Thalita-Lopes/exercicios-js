@@ -6,45 +6,54 @@
     <title>Desafio Card</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <style>
-        * {
-            box-sizing: border-box;
-        }
 
-        body {
-            margin: 0;
-            font-family: 'Oswald', sans-serif;
-        }
-        
         .curso {
-            position: relative;
-            background-color: #fff;
-            height: 300px;
-            width: 220px;
-            box-sizing: content-box;
-            padding: 1em;
-            margin: 1em;
-            box-shadow: 4px 4px 4px 4px #8483837a;
+            /*float: left;*/
             display: inline-block;
+            vertical-align: top;
+            border: solid 1px #ccc;
+            font-family: Verdana, sans-serif;
+            box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3);
+            height: 300px;
+            width: 260px;
+            margin: 5px 20px;
+            padding: 5px;
         }
 
-        img {
-            height: 120px;
+        .curso img {
+            width: 100%;
+            max-height: 50%;
         }
 
-        .preco-de {
-            color: #d10e0e;
-            font-size: 0.6em;
-            text-decoration: line-through;
+        .curso-info {
+            padding: 10px;
+            height: 90px;
+            overflow: hidden;
         }
 
-        .preco-por {
-            color:green;
-            font-weight: bold;
+        .curso-info h4 {
+            font-size: 1.4em;
+            font-weight: 100;
+            margin: 0px;
         }
 
         .curso-preco {
-            right: 1em;
+            float: right;
+            padding: 10px;
         }
+
+        .preco-de {
+            text-decoration: line-through;
+            color: firebrick;
+        }
+
+        .preco-por {
+            color: green;
+            font-weight: bold;
+            font-size: 1.4em;
+        }
+
+        
     </style>
 </head>
 
